@@ -27,7 +27,7 @@ class Data {
       'The name translates as "Castle of the Court", which denotes its origins when initially constructed during the Middle Ages. Initially planned in the 13th century as the seat of the Dukes of Austria.',
       'The palace expanded over the centuries, as they became increasingly powerful. From 1438 to 1583, and again from 1612 to 1806, it was the seat of the Habsburg kings and emperors of the Holy Roman Empire, and thereafter until 1918 the seat of the Emperors of Austria. Since then the palace has continued in its role as the seat of the head of state and is today used by the Austrian Federal President.',
       'Hofburg palace extends over 240,000 m² consists of 18 wings, 19 courtyards and 2,600 rooms in which nearly 5,000 people still work and live today.',
-      'The Sisi museum in Hufborg Palace shows a deeper insight into the life of empress Elisabeth where numerous personal items that once belonged to Elisabeth are on display.',
+      'The Sisi museum in Hofburg Palace shows a deeper insight into the life of empress Elisabeth where numerous personal items that once belonged to Elisabeth are on display.',
       'Among the 300 objects on display in the Sisi museum are parasols, fans and gloves, items of clothing, beauty preparations, her milk glass with its travelling case, her travelling medicine chest and even the original death certificate.'
     ],
     'temple_of_aphrodite': [
@@ -89,6 +89,13 @@ class Data {
       'The detailed serpents and elephants flanking the temple today are carefully designed to replicate the site’s original 14th century decor, providing a faithful vision of Chiang Mai’s distant past.',
       'For locals, one of the most popular times to visit Wat Chedi Luang is Visakha Buja, a ceremony celebrating the birth, enlightenment and death of the Buddha. On this day, Buddhists hold an awe-inspiring candle ceremony here, adorning the temple grounds with colorful votive offerings in the form of food and flowers.',
       'Today, a remarkable emerald Buddha can be seen in the main temple. This is a replica of the original holy relic, which was taken from the site several hundred years ago and moved to Luang Prabang in Laos. Later still, it was moved to Bangkok where it now resides inside Wat Phra Kaew'
+    ],
+    'beamless_brick_hall': [
+      'The Beamless Brick Hall was built in 1600 by Wanli Emperor to congratulate the birthday of his mother.',
+      'It is 17.12-metre high, 15.79-metre wide and 16.06-metre long. Inspired by techniques and styles of India and Myanmar with not a single piece of wood was used.'
+          'Walls of the hall are decorated with patterns of wood-like structures like circular arches, vertical columns, window lattices, etc. On the dome there are five white pagodas and statues of four auspicious animals. With the ancient style, the walls of dome were carved with small statues of Buddha, which were called "Thousand Buddha Worshiping Samantabhadra"',
+      'There are closets for enshrining God Buddha on the four walls inside the hall, divided into two parts, the lower part has 24 closets enshrined an iron Buddha inside them respectively, the upper part has 6 horizontal God cupboards put 307 smaller bronze Buddha statues. The smaller bronze Buddha and the iron Buddha are all worthy to appreciate, solemn, auspicious and happy.',
+      'A bronze statue of Samantabhadra riding a white elephant is placed under the dome. It is 7.35-metre high and weighs 62 tons. The statue was cast in 980, during the 5th year of Taiping Xingguo period of the Northern Song dynasty (960–1127). Sitting on the lotus throne, Samantabhadra wears a golden crown on the head and holds a Ruyi, his mount is also standing on four lotus platforms.'
     ]
   };
 }

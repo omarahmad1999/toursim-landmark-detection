@@ -8,6 +8,7 @@ import 'package:wander2/services/detection_service.dart';
 import 'package:wander2/widgets/rounded_button.dart';
 import 'landmark_information_screen.dart';
 import 'package:wander2/widgets/error_message.dart' as error;
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:wander2/landmark_database.dart';
 
 class DetectionScreen extends StatefulWidget {
@@ -23,6 +24,7 @@ class _DetectionScreenState extends State<DetectionScreen> {
   bool _busy = false;
   String _predictedLabel;
   final _picker = ImagePicker();
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   @override
   void initState() {
     _busy = true;
@@ -81,6 +83,15 @@ class _DetectionScreenState extends State<DetectionScreen> {
     return Scaffold(
       backgroundColor: kScaffoldColour,
       appBar: AppBar(
+        leading: null,
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.close),
+              onPressed: () {
+                _auth.signOut();
+                Navigator.pop(context);
+              }),
+        ],
         backgroundColor: kAppBarColour,
         title: Text(
           'Landmark Detection',
@@ -115,18 +126,21 @@ class _DetectionScreenState extends State<DetectionScreen> {
                                   fontWeight: FontWeight.w500),
                             ),
                           ),
-                          RoundedButton(
-                              colour: kDarkCoralColour,
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            LandmarkInformationScreen(
-                                              predictedLabel: _predictedLabel,
-                                            )));
-                              },
-                              title: 'Historical Information'),
+                          _predictedLabel != 'Unknown Landmark'
+                              ? RoundedButton(
+                                  colour: kDarkCoralColour,
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                LandmarkInformationScreen(
+                                                  predictedLabel:
+                                                      _predictedLabel,
+                                                )));
+                                  },
+                                  title: 'Historical Information')
+                              : Container(),
                         ],
                       )
                     : Column())

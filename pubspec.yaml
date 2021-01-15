@@ -35,16 +35,13 @@ flutter:
   uses-material-design: true
   assets:
     - assets/wanderer.png
-    - assets/labelmap.txt
-    - assets/ssd_mobilenet.tflite
-    - assets/Workers_label_map.pbtxt
-    - assets/temple_label_map.txt
-    - assets/last_hope.pbtxt
     - assets/landmark_label_map.pbtxt
     - assets/landmark_object_detection_model.tflite
     - assets/landmark_object_detection_model_0.5.tflite
-    - assets/model.tflite
-    - assets/model2.tflite
+    - assets/landmark_object_detection_model_0.4.tflite
+    - assets/landmark_label_map_none_of_the_above.pbtxt
+    - assets/landmark_object_detection_model_0.5_none_of_the_above.tflite
+
   fonts:
     - family: Flavors
       fonts:

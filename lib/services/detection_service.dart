@@ -12,8 +12,9 @@ class DetectionService {
   static BuildContext context;
   static Future<void> loadModel() async {
     String res = await Tflite.loadModel(
-        model: "assets/landmark_object_detection_model_0.5.tflite",
-        labels: "assets/landmark_label_map.pbtxt",
+        model:
+            "assets/landmark_object_detection_model_0.5_none_of_the_above.tflite",
+        labels: "assets/landmark_label_map_none_of_the_above.pbtxt",
         numThreads: 1,
         // defaults to 1
         isAsset: true,
@@ -62,6 +63,12 @@ class DetectionService {
       }
       if (recognition['detectedClass'] == 'castle_nuovo') {
         recognition['detectedClass'] = 'castel_nuovo';
+      }
+      if (recognition['detectedClass'] == 'None_of_the_above') {
+        recognition['detectedClass'] = 'Unknown Landmark';
+      }
+      if (recognition['detectedClass'] == 'wannian_temple') {
+        recognition['detectedClass'] = 'beamless_brick_hall';
       }
       if (recognition['confidenceInClass'] > _threshHold &&
           recognition['confidenceInClass'] > max) {
